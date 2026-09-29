@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Srinivasulu Batepati, Senior Automation Architect and quality engineering leader. 18+ years in test automation, agentic AI for testing, and UK banking data testing.">
+<meta property="og:title" content="Srinivasulu Batepati | Senior Automation Architect">
+<meta property="og:description" content="Srinivasulu Batepati, Senior Automation Architect and quality engineering leader. 18+ years in test automation, agentic AI for testing, and UK banking data testing.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://srinivasb93.github.io/">
+<meta name="color-scheme" content="light dark">
+<title>Srinivasulu Batepati</title>
+<style>
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: one 1080px column; hero pairs the intro with a regression "run summary" panel, then a career timeline, the agent pipeline, projects, skills, contact. */
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #111a24;
+  --muted: #56667a;
+  --line: #d9e0e8;
+  --accent: #2446b3;
+  --accent-soft: #e6ecfb;
+  --pass: #127a4b;
+  --panel: #0f1822;
+  --panel-ink: #d6e0ea;
+  --panel-muted: #7f93a8;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --step--1: 0.84rem;
+  --step-0: 1rem;
+  --step-1: 1.2rem;
+  --step-2: 1.6rem;
+  --step-3: clamp(2.3rem, 5.6vw, 4.1rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d141b; --surface: #141d27; --ink: #e4eaf0; --muted: #93a3b5; --line: #26323f;
+    --accent: #8ea8ff; --accent-soft: #1b2745; --pass: #5cc592;
+    --panel: #070c11; --panel-ink: #d6e0ea; --panel-muted: #7f93a8;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d141b; --surface: #141d27; --ink: #e4eaf0; --muted: #93a3b5; --line: #26323f;
+  --accent: #8ea8ff; --accent-soft: #1b2745; --pass: #5cc592;
+  --panel: #070c11; --panel-ink: #d6e0ea; --panel-muted: #7f93a8;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
+  padding-inline: 20px;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1080px; margin-inline: auto; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: var(--step--1); letter-spacing: .06em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* nav */
+header.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  margin-inline: -20px; padding-inline: 20px;
+}
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; flex-wrap: wrap; }
+.mark { font-family: var(--font-display); font-weight: 750; font-stretch: 112%; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
+nav ul { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+nav a { color: var(--muted); text-decoration: none; font-size: var(--step--1); }
+nav a:hover { color: var(--ink); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: center; padding-block: 64px 56px; }
+.hero > * { min-width: 0; }
+.hero h1 {
+  font-size: var(--step-3); font-weight: 800; font-stretch: 118%; line-height: 1.02; letter-spacing: -.025em;
+  margin-block: 14px 20px;
+}
+.hero .lede { font-size: var(--step-1); line-height: 1.55; color: var(--ink); max-width: 36em; }
+.hero .lede + .lede { color: var(--muted); font-size: var(--step-0); margin-top: 14px; }
+.cta { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 6px;
+  font: 600 var(--step--1)/1 var(--font-body); text-decoration: none; border: 1px solid var(--line);
+  color: var(--ink); background: var(--surface); cursor: pointer;
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+
+.run {
+  background: var(--panel); color: var(--panel-ink); border-radius: 10px;
+  font-family: var(--font-mono); font-size: .8rem; line-height: 1.75;
+  box-shadow: 0 18px 40px -24px rgba(8, 20, 40, .55);
+  overflow: hidden;
+}
+.run .bar { display: flex; justify-content: space-between; gap: 12px; padding: 10px 16px; border-bottom: 1px solid #1f2b38; color: var(--panel-muted); }
+.run .body { padding: 14px 16px 16px; overflow-x: auto; }
+.run table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.run td { padding: 0; vertical-align: top; white-space: nowrap; }
+.run td.k { color: var(--panel-muted); padding-right: 18px; }
+.run td.v { color: #f2f6fa; font-weight: 600; }
+.run .ok { color: #5cc592; }
+.run .foot { margin-top: 12px; padding-top: 10px; border-top: 1px dashed #2a3847; color: var(--panel-muted); white-space: normal; }
+
+/* sections */
+section { padding-block: 56px; border-top: 1px solid var(--line); }
+.sec-head { display: grid; grid-template-columns: 240px 1fr; gap: 32px; margin-bottom: 32px; }
+.sec-head > * { min-width: 0; }
+.sec-head h2 { font-size: var(--step-2); font-weight: 750; font-stretch: 108%; letter-spacing: -.015em; line-height: 1.15; }
+.sec-head p { color: var(--muted); max-width: 40em; }
+
+/* timeline */
+.job { display: grid; grid-template-columns: 240px 1fr; gap: 32px; padding-block: 28px; border-top: 1px dashed var(--line); }
+.job:first-of-type { border-top: 0; padding-top: 0; }
+.job > * { min-width: 0; }
+.job .when { font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; }
+.job .co { font-family: var(--font-display); font-weight: 700; font-size: var(--step-1); color: var(--ink); margin-top: 4px; }
+.job .role { color: var(--muted); font-size: var(--step--1); }
+.ladder { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.ladder span { font-family: var(--font-mono); font-size: .72rem; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.ladder span:last-child { border-color: var(--accent); color: var(--accent); }
+.award { display: inline-block; margin-top: 12px; font-size: .78rem; font-weight: 600; color: var(--pass); }
+.wins { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 32px; }
+.win h3 { font-size: var(--step-0); font-weight: 700; margin-bottom: 4px; }
+.win p { color: var(--muted); font-size: .95rem; }
+.win .fig { font-family: var(--font-mono); color: var(--accent); font-weight: 600; }
+.plain { margin: 0; padding-left: 18px; color: var(--muted); display: grid; gap: 8px; max-width: 46em; }
+.plain li::marker { color: var(--accent); }
+
+/* pipeline */
+.pipe { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; counter-reset: stage; }
+.pipe li {
+  counter-increment: stage; background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+  padding: 16px; position: relative; min-width: 0;
+}
+.pipe li::before { content: counter(stage, decimal-leading-zero); font-family: var(--font-mono); font-size: .75rem; color: var(--accent); }
+.pipe h3 { font-size: .98rem; font-weight: 700; margin-block: 6px; }
+.pipe p { color: var(--muted); font-size: .86rem; line-height: 1.5; }
+.mcp {
+  margin-top: 12px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft);
+  padding: 16px 18px; display: grid; grid-template-columns: 200px 1fr; gap: 20px;
+}
+.mcp > * { min-width: 0; }
+.mcp .lbl { font-family: var(--font-mono); font-size: var(--step--1); color: var(--accent); font-weight: 600; }
+.mcp p { font-size: .92rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chips span { font-family: var(--font-mono); font-size: .74rem; padding: 3px 8px; border-radius: 4px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); }
+.note { margin-top: 16px; color: var(--muted); font-size: .92rem; max-width: 50em; }
+
+/* projects */
+.projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.proj { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.proj .meta { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.proj h3 { font-size: var(--step-1); font-weight: 750; font-stretch: 106%; }
+.proj .tag { font-family: var(--font-mono); font-size: .72rem; color: var(--muted); }
+.proj ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .93rem; display: grid; gap: 6px; }
+.proj .stack { font-family: var(--font-mono); font-size: .75rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; margin-top: auto; }
+
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 32px; }
+.skills div { min-width: 0; }
+.skills h3 { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+.skills p { font-size: .93rem; color: var(--ink); }
+
+.creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 32px; }
+.creds > div { min-width: 0; }
+.creds h3 { font-size: var(--step-0); font-weight: 700; margin-bottom: 6px; }
+.creds ul { margin: 0; padding-left: 18px; color: var(--muted); display: grid; gap: 4px; }
+
+/* contact */
+.contact { display: grid; grid-template-columns: 240px 1fr; gap: 32px; align-items: start; }
+.contact > * { min-width: 0; }
+.contact h2 { font-size: var(--step-2); font-weight: 750; font-stretch: 108%; }
+.rows { display: grid; gap: 10px; }
+.row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.row .k { font-family: var(--font-mono); font-size: .75rem; color: var(--muted); width: 72px; text-transform: uppercase; letter-spacing: .06em; }
+.row .v { font-weight: 600; user-select: all; overflow-wrap: anywhere; min-width: 0; flex: 1; }
+.row a.v { user-select: auto; }
+.copy { font: 600 .78rem/1 var(--font-body); padding: 7px 10px; border-radius: 5px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+
+footer { padding-block: 28px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: var(--step--1); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .pipe { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 820px) {
+  .hero { grid-template-columns: 1fr; gap: 32px; padding-block: 40px; }
+  .sec-head, .job, .contact, .mcp { grid-template-columns: 1fr; gap: 12px; }
+  .wins, .projects, .creds { grid-template-columns: 1fr; }
+  nav ul { gap: 12px; }
+}
+@media (max-width: 520px) {
+  body { padding-inline: 16px; }
+  header.top { margin-inline: -16px; padding-inline: 16px; }
+  .pipe, .skills { grid-template-columns: 1fr; }
+  nav { width: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">S. Batepati</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#ai">Agentic AI</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Senior Automation Architect · Bengaluru, India</p>
+      <h1>Srinivasulu Batepati</h1>
+      <p class="lede">Automation architect and quality engineering leader with 18+ years in IT. Most recently Technical Manager at Cambium Networks, leading the team behind a 550K-line Python test framework for the cnMaestro network management platform, in the cloud and on-premises.</p>
+      <p class="lede">Over the last year I have built agentic AI workflows and MCP servers for test generation, code review and failure triage. Before Cambium, I spent nearly ten years in UK banking, leading ETL, data-warehouse and regulatory testing for FATCA, CRS and GDPR programmes.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/srinivas-batepati/" target="_blank" rel="noopener">LinkedIn profile</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <figure class="run" aria-label="cnMaestro automation at a glance" style="margin:0">
+      <div class="bar"><span>cnmaestro-regression</span><span>summary</span></div>
+      <div class="body">
+        <table>
+          <tr><td class="k">framework</td><td class="v">550K+ lines of Python</td></tr>
+          <tr><td class="k">tests</td><td class="v">1,500+</td></tr>
+          <tr><td class="k">product lines</td><td class="v">12+</td></tr>
+          <tr><td class="k">feature areas</td><td class="v">50+</td></tr>
+          <tr><td class="k">test devices</td><td class="v">220</td></tr>
+          <tr><td class="k">layers</td><td class="v">UI · REST API · CLI</td></tr>
+          <tr><td class="k">unautomated</td><td class="v"><span class="ok">55% → 33%</span></td></tr>
+          <tr><td class="k">release cycle</td><td class="v"><span class="ok">8 → 6 weeks</span></td></tr>
+        </table>
+        <div class="foot">8 Jenkins pipelines · parallel overnight runs · TestRail + ELK reporting</div>
+      </div>
+    </figure>
+  </div>
+
+  <section id="experience">
+    <div class="sec-head">
+      <h2>Experience</h2>
+      <p>Eighteen years across networking and financial services, moving from testing and data validation into automation architecture and engineering management.</p>
+    </div>
+
+    <article class="job">
+      <div>
+        <div class="when">Dec 2021 – Sep 2026</div>
+        <div class="co">Cambium Networks</div>
+        <div class="role">Technical Manager · team of five</div>
+        <div class="ladder" aria-label="Promotions"><span>Staff Engineer</span><span>Senior Staff 2023</span><span>Tech Manager 2024</span></div>
+        <div class="award">CEO Excellence Award, 2023</div>
+      </div>
+      <div class="wins">
+        <div class="win">
+          <h3>Evolved the established framework</h3>
+          <p>Pytest, Selenium WebDriver and Requests across UI, REST API and CLI on 220 test devices. Removed redundancy and extended partial scenarios to full end-to-end coverage instead of adding separate tests, which cut run times and triage effort.</p>
+        </div>
+        <div class="win">
+          <h3>NBI REST API framework in <span class="fig">9 weeks</span></h3>
+          <p>A replacement framework of 274 Python 3.12 modules, built with agent-based design, implementation and review. Validated against the legacy suite, MongoDB, PostgreSQL, ClickHouse and an API-schema coverage auditor.</p>
+        </div>
+        <div class="win">
+          <h3>One framework for every device team</h3>
+          <p>Moved the device teams onto the common cnMaestro framework. Each team keeps its own conftest and shares common utilities, so Cambium One topologies with Wi-Fi, switch and NSE devices can be tested together.</p>
+        </div>
+        <div class="win">
+          <h3>Backlog <span class="fig">55% → 33%</span>, releases <span class="fig">8 → 6 weeks</span></h3>
+          <p>Prioritized critical functionality and high-effort manual scenarios, with AI-assisted test generation and run-report triage. Led the QA shift-left work that took a week out of manual regression.</p>
+        </div>
+        <div class="win">
+          <h3>cnWave 60 GHz and Auto VLAN</h3>
+          <p>End-to-end automation for the cnWave fixed-wireless line across cloud and on-premises. A 27-test Auto VLAN suite across NSE, cnMatrix switch, Wi-Fi AP and client topologies, checked through REST, UI and SSH/CLI.</p>
+        </div>
+        <div class="win">
+          <h3>Pipelines, infrastructure and people</h3>
+          <p>Owned eight Jenkins regression pipelines on VMware vCenter and ESXi, with pyVmomi provisioning and a shared Groovy library. Set automation standards, led architecture and code reviews, and hired after screening 50+ candidates.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="job">
+      <div>
+        <div class="when">Jan 2012 – Dec 2021</div>
+        <div class="co">Infosys</div>
+        <div class="role">Technical Test Lead</div>
+        <div class="award">Top performer of a 120+ member unit, 2015</div>
+      </div>
+      <ul class="plain">
+        <li>Led QA and automation delivery for major UK banking and financial services programmes, with distributed teams of up to 12 engineers and 19 months onsite with a UK client.</li>
+        <li>Delivered test programmes for FATCA, CRS and GDPR regulatory compliance at major UK banks.</li>
+        <li>Delivered ETL and data-warehouse modernization, building Python data-validation tools and SQL-driven test strategies across Teradata, Oracle, DB2 and SQL Server with Informatica, SSIS and SSMS.</li>
+        <li>Managed test planning, estimation, defect governance and stakeholder reporting across Agile and Waterfall delivery.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <div>
+        <div class="when">Jun 2008 – Jan 2012</div>
+        <div class="co">Tata Consultancy Services</div>
+        <div class="role">IT Analyst</div>
+      </div>
+      <ul class="plain">
+        <li>Delivered enterprise testing and data validation for major UK retail transformation programmes.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="ai">
+    <div class="sec-head">
+      <h2>Agentic AI test automation</h2>
+      <p>A multi-agent workflow that takes a requirement through to reviewed test code, then reads the run results back. Each stage hands off to the next, and a person signs off before anything merges.</p>
+    </div>
+    <ol class="pipe">
+      <li><h3>Requirement intake</h3><p>Reads requirements from JIRA and existing cases from TestRail.</p></li>
+      <li><h3>Test review</h3><p>Exercises the live product to find coverage gaps.</p></li>
+      <li><h3>Code generation</h3><p>Writes framework-aligned tests from curated skills and runs design-pattern checks.</p></li>
+      <li><h3>Pull-request review</h3><p>Reviews the Bitbucket pull request before a human reviewer sees it.</p></li>
+      <li><h3>Failure triage</h3><p>Reads Jenkins reports and separates product defects from automation and environment issues.</p></li>
+    </ol>
+    <div class="mcp">
+      <div class="lbl">MCP tool layer</div>
+      <div>
+        <p>Four MCP servers I built for framework REST and CLI operations, cnMaestro REST APIs, JIRA analysis and Bitbucket pull-request review, plus integrated Playwright, TestRail and Jenkins servers. Agents get explicit permissions and work to the framework's standards.</p>
+        <div class="chips"><span>Claude Code</span><span>ChatGPT Codex</span><span>Google Antigravity</span><span>Cursor</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="sec-head">
+      <h2>Personal projects</h2>
+      <p>Products I build outside work to go deeper on backend design, cloud deployment and LLM evaluation.</p>
+    </div>
+    <div class="projects">
+      <article class="proj">
+        <div class="meta">
+          <h3>Falcon Pro</h3>
+          <a class="tag" href="https://thefalconpro.com" target="_blank" rel="noopener">thefalconpro.com ↗</a>
+        </div>
+        <p>A cloud-native algorithmic trading platform, built hands-on over 16 months.</p>
+        <ul>
+          <li>Adapter layer across four live brokers and a paper-trading simulator.</li>
+          <li>Backtesting with 48 indicators across 15 timeframes, and self-healing WebSocket market data.</li>
+          <li>Envelope encryption, TOTP two-factor authentication, per-strategy risk controls and idempotent order execution.</li>
+          <li>Pytest regression pack of 3,000+ tests across 220 modules.</li>
+        </ul>
+        <div class="stack">FastAPI · PostgreSQL · Redis · Docker Compose · AWS EC2 · nginx · React · TypeScript</div>
+      </article>
+      <article class="proj">
+        <div class="meta">
+          <h3>cnMaestro Knowledge Assistant</h3>
+          <span class="tag">in progress</span>
+        </div>
+        <p>A retrieval-augmented assistant that answers cnMaestro questions from the public user guide and community articles, so newcomers can learn the platform without reading the whole guide.</p>
+        <ul>
+          <li>Section-aware chunking, cited community answers and relevance thresholds. Refuses account-specific questions.</li>
+          <li>Answer quality measured with DeepEval: faithfulness, answer relevancy, and contextual precision, recall and relevancy.</li>
+          <li>Evaluation set being expanded to 44 cases across every user-guide chapter.</li>
+        </ul>
+        <div class="stack">Django · PostgreSQL · pgvector · DeepEval</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sec-head">
+      <h2>Skills</h2>
+      <p>The tools I use day to day, grouped by where they sit in the work.</p>
+    </div>
+    <div class="skills">
+      <div><h3>Test automation</h3><p>Python, Pytest, pytest-xdist, Selenium WebDriver, Requests, Paramiko, Page Object Model, JSON Schema, Allure, ReportPortal</p></div>
+      <div><h3>Quality engineering</h3><p>Test strategy and architecture, shift-left testing, API-to-database parity, endpoint coverage auditing, failure triage, TestRail, JIRA</p></div>
+      <div><h3>AI engineering</h3><p>MCP server development, LLM agent orchestration, agent permission design, RAG, DeepEval, test-code generation and verification</p></div>
+      <div><h3>Network automation</h3><p>NMS feature validation, device onboarding and configuration checks, VLAN and LLDP provisioning, REST/HTTPS, SSH/CLI, WebSocket</p></div>
+      <div><h3>CI/CD and infrastructure</h3><p>Jenkins, shared Groovy libraries, Git, Bitbucket, Docker, nginx, Linux, VMware vCenter and ESXi, pyVmomi, ELK, AWS EC2</p></div>
+      <div><h3>Data</h3><p>SQL, PostgreSQL, MongoDB, ClickHouse, Redis, SQL Server, Oracle, DB2, Teradata, Informatica, SSIS</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="creds">
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>PCAP: Certified Associate in Python Programming</li>
+          <li>Infosys Certified Python SDET Engineer</li>
+          <li>Microsoft AZ-900 and DP-900</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li>B.Tech, Electronics and Communication Engineering, JNTU College of Engineering, 2004–08</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact</h2>
+      <div class="rows">
+        <div class="row">
+          <span class="k">Email</span>
+          <span class="v" id="email">srini.batepati@gmail.com</span>
+          <button class="copy" id="copy-email" type="button">Copy</button>
+        </div>
+        <div class="row">
+          <span class="k">LinkedIn</span>
+          <a class="v" href="https://www.linkedin.com/in/srinivas-batepati/" target="_blank" rel="noopener">linkedin.com/in/srinivas-batepati</a>
+        </div>
+        <div class="row">
+          <span class="k">GitHub</span>
+          <a class="v" href="https://github.com/srinivasb93?tab=repositories" target="_blank" rel="noopener">github.com/srinivasb93</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Srinivasulu Batepati · Bengaluru, India</span>
+    <span>Updated September 2026</span>
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy-email');
+    var email = document.getElementById('email');
+    function selectText() {
+      var r = document.createRange(); r.selectNodeContents(email);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+    btn.addEventListener('click', function () {
+      var text = email.textContent.trim();
+      var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () { selectText(); btn.textContent = 'Press Ctrl+C'; });
+      } else { selectText(); btn.textContent = 'Press Ctrl+C'; }
+    });
+  })();
+</script>
+
+</body>
+</html>
